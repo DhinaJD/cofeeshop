@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(144, 108, 41);
+}
+
+.cafe-freda {
+  min-height: 100vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e3e1d2;
+}
+@media screen and (min-width: 40rem) {
+  .cafe-freda {
+    flex-direction: row;
+  }
+}
+.cafe-freda h2 {
+  position: relative;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+}
+@media screen and (min-width: 40rem) {
+  .cafe-freda h2 {
+    left: 8vw;
+  }
+}
+.cafe-freda .text-content {
+  width: 50%;
+}
+@media screen and (min-width: 40rem) {
+  .cafe-freda .text-content {
+    display: flex;
+    justify-content: center;
+  }
+}
+.cafe-freda .text-content .container {
+  width: 100%;
+}
+@media screen and (min-width: 40rem) {
+  .cafe-freda .text-content .container {
+    width: 33.333%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.cafe-freda .gif-section {
+  width: 50%;
+  min-height: 100vh;
+  background-color: #efece2;
+}
+.cafe-freda .gif-section .vid-gif {
+  background: url(/images/food-gif.gif);
+  min-width: 30vw;
+  min-height: 30vw;
+}/*# sourceMappingURL=style.css.map */

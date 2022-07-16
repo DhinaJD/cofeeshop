@@ -1,0 +1,29 @@
+$small      : 40rem; //640px
+$large      : 64rem; //1024
+$xtra-large : 100rem; //1600
+
+@mixin respond($viewport) {
+    @if $viewport == small {
+        @media screen and (max-width:$small  - 0.1) {@content;}
+    }
+    @else if $viewport == medium{
+        @media screen and (min-width:$small ){@content;}
+    }
+    @else if $viewport == ipad {
+        @media screen and (min-width:$small ) and (max-width:$large - 0.1){@content;}
+    }
+    @else if $viewport == large {
+        @media screen and (min-width:$large ){@content;}
+    }
+    @else if $viewport == desktop {
+        @media screen and (min-width:$xtra-large){@content;}
+    }
+}
+
+
+$header-theme: rgb(144, 108, 41);
+$header-theme-light: #cea352;
+$White-Coffee: #e3e1d2;
+$Alabaster:#efece2;
+$white: #ffffff;
+$black: #000000;
