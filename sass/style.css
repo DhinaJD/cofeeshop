@@ -11,6 +11,7 @@ header {
   align-items: center;
   justify-content: center;
   background-color: rgb(144, 108, 41);
+  display: none;
 }
 
 .cafe-freda {
@@ -18,7 +19,6 @@ header {
   max-width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   background-color: #e3e1d2;
 }
@@ -29,12 +29,17 @@ header {
 }
 .cafe-freda h2 {
   position: relative;
-  -ms-writing-mode: tb-lr;
-      writing-mode: vertical-lr;
+  color: #ffffff;
+  font-family: "Alegreya Sans", Helvetica, Arial, sans-serif;
 }
 @media screen and (min-width: 40rem) {
   .cafe-freda h2 {
-    left: 8vw;
+    left: 0;
+    top: 20vw;
+    font-size: 1.389vw;
+    transform: rotate(-90deg);
+    position: absolute;
+    display: block;
   }
 }
 .cafe-freda .text-content {
@@ -44,6 +49,7 @@ header {
   .cafe-freda .text-content {
     display: flex;
     justify-content: center;
+    padding: 0 0.694vw;
   }
 }
 .cafe-freda .text-content .container {
@@ -51,20 +57,52 @@ header {
 }
 @media screen and (min-width: 40rem) {
   .cafe-freda .text-content .container {
-    width: 33.333%;
-    height: 100vh;
+    width: 38.333%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 }
+.cafe-freda .text-content .container h1 {
+  font-size: 54px;
+  color: #395442;
+  text-transform: uppercase;
+  font-family: "Alegreya Sans", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  line-height: 54px;
+  margin-bottom: 2.083vw;
+}
+.cafe-freda .text-content .container h1 span {
+  font-size: 24px;
+}
+@media screen and (min-width: 40rem) {
+  .cafe-freda .text-content .container .left-text {
+    padding-left: 3.125vw;
+  }
+}
+.cafe-freda .text-content .container .left-text h3 {
+  font-size: 28px;
+  color: #ac9377;
+  font-family: "Alegreya Sans", Helvetica, Arial, sans-serif;
+  margin-bottom: 2vw;
+  font-weight: bold;
+}
+.cafe-freda .text-content .container .left-text p {
+  font-weight: 400;
+  color: #ac9377;
+  font-family: "Alegreya Sans", Helvetica, Arial, sans-serif;
+  margin-bottom: 0.903vw;
+}
 .cafe-freda .gif-section {
   width: 50%;
-  min-height: 100vh;
   background-color: #efece2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .cafe-freda .gif-section .vid-gif {
   background: url(/images/food-gif.gif);
-  min-width: 30vw;
-  min-height: 30vw;
+  height: 56vh;
+  min-width: 39vw;
 }/*# sourceMappingURL=style.css.map */
