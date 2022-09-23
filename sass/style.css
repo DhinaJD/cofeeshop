@@ -11,7 +11,89 @@ header {
   align-items: center;
   justify-content: center;
   background-color: rgb(144, 108, 41);
+}
+
+#loading {
   display: none;
+  position: fixed;
+  background-color: #cea352;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 29;
+}
+#loading .cofee-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease-in-out;
+}
+#loading .cofee-wrapper span {
+  background: url(/images/waves-coffee.svg) no-repeat center top;
+  width: 100%;
+  position: absolute;
+  bottom: 32px;
+  height: 46px;
+  -webkit-animation: cofeeLoad 2s infinite;
+          animation: cofeeLoad 2s infinite;
+}
+@-webkit-keyframes cofeeLoad {
+  0% {
+    opacity: 0;
+    bottom: 25px;
+  }
+  50% {
+    opacity: 1;
+    bottom: 47px;
+  }
+  100% {
+    opacity: 0;
+    bottom: 55px;
+  }
+}
+@keyframes cofeeLoad {
+  0% {
+    opacity: 0;
+    bottom: 25px;
+  }
+  50% {
+    opacity: 1;
+    bottom: 47px;
+  }
+  100% {
+    opacity: 0;
+    bottom: 55px;
+  }
+}
+#loading .cofee-wrapper span.left {
+  left: -18px;
+}
+#loading .cofee-wrapper span.middle {
+  right: -10px;
+}
+#loading .cofee-wrapper span.right {
+  right: 4px;
+}
+
+.window-ready #loading {
+  display: none;
+}
+
+.flower {
+  background: url(/images/flowers-top.png) no-repeat center top;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  position: fixed;
+}
+
+.flower.top-left {
+  transform: rotate(45deg);
+  right: 238px;
+  top: -100px;
+  transition: all 2s ease-in;
 }
 
 .cafe-freda {

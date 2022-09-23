@@ -9,13 +9,27 @@
     <meta name="author" content="Dhina JD">
     <link rel="icon" href="images/favicon.ico">
     <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,300,300italic,400italic,800,800italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/app.js"></script>
     <link rel="stylesheet" href="sass/style.css">
 </head>
 <body>
+    <div id="loading">
+        <div class="cofee-wrapper">
+            <span class="left"></span>
+            <span class="middle"></span>
+            <span class="right"></span>
+            <img src="/images/coffee-loading.svg" class="loading-img" alt="loading...">
+        </div>
+    </div>
+    <div class="flower top-left"></div>
+    <div class=" top-right"></div>
+    <div class=" bottom-left"></div>
+    <div class=" bottom-left"></div>
     <header>
         <img src="/images/logo.svg" alt="logo">
     </header>
-    
     <section class="cafe-freda">
         <h2>LA FORMULE</h2>
         <div class="text-content">
@@ -36,7 +50,8 @@
         </div>
     </section>
 
-    <script src="app.js"></script>
-
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIyqWXEPv_zHe4n2NcXLeNChOUEpBEOB0&callback=initMap"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
