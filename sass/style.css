@@ -7,10 +7,14 @@
 header {
   max-width: 100%;
   min-height: 100vh;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
-  background-color: rgb(144, 108, 41);
+  background-color: #cea352;
+}
+header img {
+  width: 180px;
+  display: block;
 }
 
 #loading {
@@ -77,23 +81,19 @@ header {
   right: 4px;
 }
 
-.window-ready #loading {
-  display: none;
-}
-
 .flower {
   background: url(/images/flowers-top.png) no-repeat center top;
   background-size: cover;
-  width: 100%;
-  height: 200px;
+  display: block;
   position: fixed;
+  width: 100%;
+  height: 50%;
+  transition: all 0.3ms ease-in;
 }
 
 .flower.top-left {
-  transform: rotate(45deg);
-  right: 238px;
-  top: -100px;
-  transition: all 2s ease-in;
+  left: 0;
+  top: 0;
 }
 
 .cafe-freda {
